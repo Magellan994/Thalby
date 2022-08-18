@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: white;
+    padding: 7px 0;
+}
+.container{
+    margin: auto;
+    max-width: 1064px;
+}
+.d-flex{
+    display: flex;
+
+}
+.justify-content{
+    justify-content: space-between;
+
+}
+.align-center{
+    align-items: center;
+}
+header ul{
+    list-style: none;
+}
+header nav li a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1C1B1B;
+    text-decoration: none;
+}
+header nav li{
+    margin-right: 28px;
+}
+header li:first-of-type{
+    margin-right: 16px;
+}
+header nav li:first-of-type{
+    margin-right: 28px;
+}
+header li:last-of-type{
+    margin-left: 7px;
+}
+header nav li:last-of-type{
+    margin-left: 0;
+}
+header .container{
+    position: relative;
+}
+header .logo{
+position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 13px;
+}
+.main_banner{
+    padding: 90px 0;
+    background-color: #F0EFEB;
+    position: relative;
+}
+.main_banner h1{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 42px;
+}
+.main_banner p{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 26px;
+}
+.main_banner a{
+    background: #000000;
+    border-radius: 100px;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 7px 23px;
+    text-decoration: none;
+}
+.main_banner img {
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+.People{
+    background: rgba(204, 204, 204, 0.3);
+    padding-top: 76px;
+    padding-bottom: 61px;
+}
+.for_image{
+    max-width: 385px;
+    margin-right: 50px;
+}
+.People .for_image img{
+    width: 100%;
+    display: block;
+}
+.People .discription{
+    max-width: 498px;
+
+}
+.discription h2{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.discription p{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    padding-top: 31px;
+    padding-bottom: 40px;
+}
+.discription a{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #000000;
+
+}
