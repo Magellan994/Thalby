@@ -1,0 +1,578 @@
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 10px;
+    }
+    .main_banner h1{
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .main_banner p{
+        font-size: 17px;
+    }
+    .main_banner
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        padding: 0 15px;
+    }
+    .main_banner img{
+        position: relative;
+    }
+    @media screen and (max-width: 834px){
+        .o_b_s .d-flex{
+            flex-direction: column;
+            align-items: center;
+        }
+        .sellers .d-flex{
+            flex-direction: column;
+        }
+        .sellers_info text{
+            padding-left: 30px;
+        }
+        .o_b_s .sellers_info {
+            max-width: 320px;
+        }
+        .guides p {
+            font-size: 25px;
+            line-height: 34px;
+        }
+        .text .l_text {
+            width: 260px;
+        }
+        .text .l_text span {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 800px){
+        .pre_footer .d-flex{
+            flex-direction: column;
+            align-items: center;
+        }
+        .pre_footer .item{
+            padding-bottom: 30px;
+        }
+        .guides p {
+            font-size: 25px;
+            line-height: 34px;
+        }
+        .text .l_text {
+            width: 240px;
+        }
+        .text .l_text span {
+            width: 60px;
+            height: 60px;
+           right: 25px;
+        }
+
+    }
+    @media screen and (max-width: 768px) {
+        nav{
+            display: none;
+            flex-direction: row-reverse;
+        }
+        header .logo{
+            position: relative;
+            left: 0;
+            margin-left: 0px;
+            top: 0px;
+        }
+        .People .d-flex {
+            flex-direction: column;
+        }
+
+        .People .for_image {
+            padding-bottom: 10px;
+        }
+
+        .People .discription h2 {
+            text-align: center;
+        }
+
+        .People .discription p {
+            text-align: center;
+        }
+
+        .People .discription a {
+            position: relative;
+            left: 36%;
+        }
+
+        .second_part .d-flex {
+            flex-direction: column;
+        }
+
+        .second_part .for_image {
+            padding-bottom: 10px;
+        }
+
+        .second_part .second_text h2 {
+            text-align: center;
+        }
+
+        .second_part .second_text p {
+            text-align: center;
+        }
+
+        .second_part .second_text a {
+            position: relative;
+            right: 35%;
+        }
+
+        .third_part .d-flex {
+            flex-direction: column;
+        }
+
+        .third_part .for_image {
+            padding-bottom: 10px;
+        }
+
+        .third_part .third_text h2 {
+            text-align: center;
+        }
+
+        .third_part .third_text p {
+            text-align: center;
+        }
+
+        .third_part .third_text a {
+            position: relative;
+            left: 38%;
+        }
+
+        .pre_footer .d-flex {
+            flex-direction: column;
+        }
+
+        .main_banner img {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+
+        .o_b_s .d-flex {
+            flex-direction: column;
+        }
+
+        .o_b_s .sellers_info {
+            padding-bottom: 20px;
+        }
+
+        .sellers .d-flex {
+            flex-direction: column;
+        }
+
+        .second_part .d-flex {
+            flex-direction: column;
+        }
+
+        .third_part .d-flex {
+            flex-direction: column;
+        }
+
+        .Inform_td.d-flex {
+            flex-direction: column;
+        }
+
+        .inform {
+            padding-top: 16px;
+        }
+
+        .text .d-flex {
+            flex-direction: column;
+        }
+    }
+    .end_site .end_text{
+       left: 15px;
+    }
+}
+@media screen and (max-width: 428px) {
+    nav{
+        display: none;
+    }
+
+    header .logo{
+        position: relative;
+        left: 0;
+        margin-left: 0px;
+        top: 0px;
+    }
+    .main_banner img{
+        width: 100%;
+    }
+    .People .inform.d-flex{
+        flex-direction: column;
+    }
+    .guides p {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .text .l_text {
+        width: 120px;
+    }
+    .text .l_text span {
+        width: 60px;
+        height: 60px;
+        right: 90px;
+    }
+    .pre_footer .d-flex {
+        flex-direction: column;
+    }
+.more_nav{
+    margin-left: 30px;
+}
+    .nav_end li a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 414px){
+    .nav_end li a {
+        font-size: 9px;
+        line-height: 13px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .nav_end li a {
+        font-size: 7px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .main_banner img {
+        width: 100%;
+    }
+
+    .f_social li a img {
+        width: 100%;
+
+    }
+
+    .main_banner h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .main_banner p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .main_banner a {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .main_banner img {
+        width: 100%;
+    }
+
+    .o_b_s h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .o_b_s p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .sellers img {
+        width: 100%;
+    }
+
+    .sellers h4 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .sellers p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .sellers a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .People img {
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .People h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .People p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .People a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .second_part img {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .second_part h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .second_part p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .second_part a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .third_part img {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .guides h4 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .guides p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .text .l_text {
+        width: 100px;
+    }
+
+    .text .l_text span {
+        width: 30px;
+        height: 30px;
+    }
+
+    .end_site .f_social img {
+        max-width: 100%;
+    }
+
+    .f_social {
+        margin-right: 45px;
+    }
+
+    .more_nav {
+        margin-right: 28px;
+    }
+
+    .nav_end li a {
+        font-size: 10px;
+        line-height: 21px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .main_banner h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .main_banner p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .main_banner a {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .main_banner img {
+        width: 100%;
+    }
+
+    .o_b_s h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .o_b_s p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .sellers img {
+        width: 100%;
+    }
+
+    .sellers h4 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .sellers p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .sellers a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .People img {
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .People h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .People p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .People a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .second_part img {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .second_part h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .second_part p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .second_part a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .third_part img {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .third_part a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .guides h4 {
+        font-size: 10px;
+        line-height: 28px;
+    }
+
+    .guides p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .text .l_text {
+        width: 80px;
+    }
+
+    .text .l_text span {
+        width: 30px;
+        height: 30px;
+
+
+    }
+
+    .end_site .f_social img {
+        max-width: 100%;
+    }
+
+    .f_social {
+        margin-right: 45px;
+    }
+
+    .more_nav {
+        margin-right: 28px;
+    }
+
+    .nav_end li a {
+        font-size: 10px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .guides h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .inbox_form h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .end_site .f_social img {
+        max-width: 100%;
+    }
+
+    .f_social {
+        margin-right: 5px;
+    }
+
+    .more_nav {
+        margin-right: 5px;
+    }
+
+    .nav_end li a {
+        font-size: 6px;
+        line-height: 10px;
+    }
+}
+

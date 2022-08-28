@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,31 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/scripts.js"></script>
+
+
 </head>
 <body>
 <header>
     <div class="container d-flex justify-content align-center">
-<nav>
-    <ul class="d-flex align-center">
-        <li>
-            <a href="#">Shop</a>
-        </li>
-        <li>
-            <a href="#">Colecttion</a>
-        </li>
-        <li>
-            <a href="#">Free Guide</a>
-        </li>
-        <li>
-            <a href="#">Stories</a>
-        </li>
-    </ul>
-</nav>
+        <nav>
+            <ul class="d-flex align-center">
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Colecttion</a>
+                </li>
+                <li>
+                    <a href="#">Free Guide</a>
+                </li>
+                <li>
+                    <a href="#">Stories</a>
+                </li>
+            </ul>
+        </nav>
         <a href="#" class="logo">
             <img src="images/logo.svg" alt="logo">
         </a>
-        <ul class="d-flex align-center">
+        <ul class=" d-flex align-center">
             <li>
                 <a href="#"> <img src="images/insta.svg" alt="instagram"></a>
             </li>
@@ -48,9 +54,9 @@
 </header>
 <section class="main_banner">
     <div class="container">
-<h1>
-    Fall deeper in love <br> with <br>humanity.
-</h1>
+        <h1>
+            Fall deeper in love <br> with <br>humanity.
+        </h1>
         <p>Get to know the world through our concise,<br> informative and inspiring guides.</p>
         <a href="#">Shop Now</a>
     </div>
@@ -58,34 +64,53 @@
 </section>
 <section class="o_b_s">
     <div class="container">
-       <h3>Our guides explain countries and cultures.</h3>
+        <h3>Our guides explain countries and cultures.</h3>
         <p>Are you curious about the world around you? Our guides are for smart <br> global citizens, world travelers and engaged residents who want to gain
             <br> a deeper understanding of the cultures and societies they care about.</p>
         <p>Available as ebooks here and on Amazon.</p>
         <h3>Our best sellers</h3>
-    <div class="sellers d-flex justify-content">
-        <div>
-            <img src="images/fch.jpg" alt="image_1">
-            <h4>Thalby Guide to <br> French Culture and <br> Heritage</h4>
-            <p>USD 6.99</p>
-            <a href="#">Add to cart </a>
+        <div class="sellers d-flex justify-content owl-carousel ">
+            <div class="sellers_info">
+                <img src="images/fch.jpg" alt="image_1">
+                <h4>Thalby Guide to <br> French Culture and <br> Heritage</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart </a>
+            </div>
+            <div class="sellers_info">
+                <img src="images/fps.jpg" alt="image_2">
+                <h4>Thalby Guide to <br> French People and <br>Society</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="sellers_info">
+                <img src="images/gch.jpg" alt="image_3">
+                <h4>Thalby Guide to <br>German Culture and <br>Heritage</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="sellers_info">
+                <img src="images/fch.jpg" alt="image_1">
+                <h4>Thalby Guide to <br> French Culture and <br> Heritage</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart </a>
+            </div>
+            <div class="sellers_info">
+                <img src="images/fps.jpg" alt="image_2">
+                <h4>Thalby Guide to <br> French People and <br>Society</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="sellers_info">
+                <img src="images/gch.jpg" alt="image_3">
+                <h4>Thalby Guide to <br>German Culture and <br>Heritage</h4>
+                <p>USD 6.99</p>
+                <a href="#">Add to cart</a>
+            </div>
         </div>
-        <div>
-            <img src="images/fps.jpg" alt="image_2">
-            <h4>Thalby Guide to <br> French People and <br>Society</h4>
-            <p>USD 6.99</p>
-            <a href="#">Add to cart</a>
         </div>
-        <div>
-            <img src="images/gch.jpg" alt="image_3">
-            <h4>Thalby Guide to <br>German Culture and <br>Heritage</h4>
-            <p>USD 6.99</p>
-            <a href="#">Add to cart</a>
-        </div>
-    </div>
-  </section>
+</section>
 <section class="People">
-    <div class="container d-flex align-center">
+    <div class="container d-flex align-center ">
         <div class="for_image">
             <img src="images/french.jpg" alt="french_woman">
         </div>
@@ -108,60 +133,147 @@
         </div>
     </div>
 </section>
- <section class="third_part">
-     <div class="container d-flex align-center">
-         <div class="for_image">
-             <img src="images/german.jpg" alt="germany_woman">
-         </div>
-         <div class="third_text">
-             <h2>Power and Politics</h2>
-             <p>Our guides to power take you behind the scenes to explore the power dynamics, policies and politics shaping a country's future and its global position.</p>
-             <a href="#">Coming 2022!</a>
-         </div>
-     </div>
- </section>
+<section class="third_part">
+    <div class="container d-flex align-center">
+        <div class="for_image">
+            <img src="images/german.jpg" alt="germany_woman">
+        </div>
+        <div class="third_text">
+            <h2>Power and Politics</h2>
+            <p>Our guides to power take you behind the scenes to explore the power dynamics, policies and politics shaping a country's future and its global position.</p>
+            <a href="#">Coming 2022!</a>
+        </div>
+    </div>
+</section>
 <section class="guides">
     <div class="container">
-<h4>Some of the features that <br>make Thalby guides unique </h4>
-        <div class="text d-flex ">
-            <div class="first_p flex_wrap">
+        <h4>Some of the features that <br>make Thalby guides unique </h4>
+        <div class="text d-flex flex_wrap justify-content ">
+            <div class="l_text ">
+                <span class="one"></span>
                 <p>Written by <br>locals</p>
+            </div>
+                <div class="l_text ">
+                    <span class="two"></span>
+                    <p>Packed with <br> insight</p>
+                </div>
+            <div class="l_text ">
+                <span class="tree"></span>
+                <p>Interviews with <br>diverse voices</p>
+            </div>
+            <div class="l_text ">
+                <span class="four"></span>
                 <p>Key facts and <br> etiquette tips</p>
             </div>
-            <div class="second_p flex_wrap">
-                <p>Packed with <br> insight</p>
-                <p>A concise <br> 1-hour read</p>
 
+            <div class="l_text ">
+                <span class="five"></span>
+                <p>A concise <br> 1-hour read</p>
             </div>
-            <div class="third_p flex_wrap ">
-                <p>Interviews with <br>diverse voices</p>
+            <div class="l_text">
+                <span class="six"></span>
                 <p>Instant<br>digital access</p>
             </div>
+
         </div>
-      <h3>Each Thalby guide includes interviews with <br>a range of fascinating voices, such as</h3>
+        <h3>Each Thalby guide includes interviews with <br>a range of fascinating voices, such as</h3>
     </div>
 </section>
-<section class="pre_footer">
+<section class="pre_footer ">
     <div class="container d-flex justify-content">
-        <div class="inform">
-            <img src="images/c_m.png" alt="Camille Muller">
+       <div class="more_about owl-carousel">
+        <div class="item">
+            <img src="images/c_m.png" alt="image">
             <h4>"I don’t like things to be <br> conventional. If it’s too <br> nice, I bring disorder."</h4>
-            <p>Camille Muller,<br> Landscape Designer, France</p>
+            <p>
+                Camille Muller,
+                <span>Landscape Designer, France</span>
+            </p>
             <a href="#">Discover</a>
         </div>
-        <div class="inform">
-            <img src="images/s_k.png" alt="Sonia Kowalewski">
-            <h4>"Magic is not magic in <br>the sense that I can just <br> wish for anything."</h4>
-            <p>Sonia Kowalewski,<br>Witch, Germany</p>
+        <div class="item">
+            <img src="images/s_k.png" alt="image">
+            <h4>"Magic is not magic in <br> the sense that I can just <br> wish for anything."</h4>
+            <p>
+                Sonia Kowalewski,
+                <span>Witch, Germany</span>
+            </p>
             <a href="#">Discover</a>
         </div>
-        <div class="inform">
-            <img src="images/l_s.png" alt="Lilly Stoephasius">
+        <div class="item">
+            <img src="images/l_s.png" alt="image">
             <h4>"I was eight years old <br> when I entered my first <br> competition. I won it."</h4>
-            <p>Lilly Stoephasius,<br> Skateboarder, Germany<br></p>
+            <p>
+                Lilly Stoephasius,
+                <span>Skateboarder, Germany</span>
+            </p>
             <a href="#">Discover</a>
         </div>
     </div>
+    </div>
 </section>
+<section class="inbox_form">
+    <div class="container align-center">
+        <h4>Keep in touch</h4>
+        <p>Get our travel advice, global views and travel freebies in your <br> inbox</p>
+        <form action="#" class="i_form d-flex justify-content ">
+            <div class="i_Firstname">
+                <label for="First Name"></label>
+                <input class="m_input" type="text" name="First Name" id="First Name" placeholder="First Name">
+            </div>
+            <div class="i_lastname">
+                <label for="Last Name"></label>
+                <input class="m_input" type="text" name="Last Name" id="Last Name" placeholder="Last Name">
+            </div>
+            <div class="i_email">
+                <label for="Email"></label>
+                <input class="m_input" type="email" name="Email" id="Email" placeholder="Email">
+            </div>
+            <div class="i_button">
+                <button class="S_button" type="submit" > Subscribe</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="end_site">
+    <div class="container d-flex justify-content ">
+        <div class="f_social">
+            <a href="#" ><img src="images/f_logo.svg" alt="logo"></a>
+            <ul class="d-flex justify-content">
+                <li><a href="#"><img src="images/f_fb.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/f_ins.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="images/f_twit.svg" alt="twitter"></a></li>
+            </ul>
+        </div>
+        <div class="nav_end d-flex">
+            <div class="more_nav">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Write for Us</a></li>
+                </ul>
+            </div>
+            <div class="end_nav">
+                <ul>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">Email hi@thalby.com</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="end_text">
+        <p>Thalby LLC © 2021</p>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/f8947d1453.js" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
