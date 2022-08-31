@@ -206,7 +206,6 @@ header .logo{
 }
 .People .discription{
     max-width: 498px;
-
 }
 .discription h2{
     font-family: 'Roboto',sans-serif;
@@ -300,7 +299,6 @@ header .logo{
 .third_part .for_image img{
     width: 100%;
     display: block;
-
 }
 
 .third_text{
@@ -313,7 +311,6 @@ header .logo{
     font-size: 36px;
     line-height: 42px;
     color: #000000;
-
 }
 .third_text p{
     font-family: 'Roboto',sans-serif;
@@ -596,7 +593,6 @@ header .logo{
     color: black;
 
 }
-
 .owl-nav .owl-next{
     position: absolute;
     right: -7px;
@@ -608,4 +604,38 @@ header .logo{
     content: "\f054";
     font-size: 50px;
     color: black;
+}
+.ui-widget-header {
+    border: none;
+    background: none;
+}
+.ui-corner {
+    border-bottom-right-radius: 15px;
+}
+.b_d input{
+    height: 30px;
+    width: 100%;
+    border-color: aquamarine;
+    border-radius: 10px;
+}
+.b_d{
+margin-top: 10px;
+
+}
+.b_d_button{
+display: block;
+margin-top: 9px;
+    margin-left: 80px;
+    background-color: khaki;
+    padding: 8px 17px;
+    border-radius: 30px;
+    border: none;
+}
+.ui-dialog-titlebar-close{
+    border: none;
+    background: none;
+}
+.ui-dialog-titlebar-close:hover{
+    background: tomato;
+    border: none;
 }

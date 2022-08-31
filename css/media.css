@@ -545,6 +545,23 @@
         font-size: 10px;
         line-height: 21px;
     }
+    .owl-nav .owl-prev:before {
+        font-size: 30px;
+    }
+    .owl-nav .owl-next:before {
+        font-size: 30px;
+    }
+    .owl-nav .owl-prev {
+        left: 25px;
+        top: 25%;
+    }
+    .owl-nav .owl-next {
+        right: 25px;
+        top: 25%;
+    }
+    .container {
+        padding: 0 15px;
+    }
 }
 
 @media screen and (max-width: 280px) {

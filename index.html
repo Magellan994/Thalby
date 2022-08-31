@@ -11,13 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="js/scripts.js"></script>
-
-
 </head>
 <body>
+<div id="dialog">
+   <div class="b_d">
+    <label></label>
+    <input type="text" name="search"placeholder="Let us know">
+       <button class="b_d_button" type="submit">Let's Find</button>
+   </div>
+</div>
 <header>
     <div class="container d-flex justify-content align-center">
         <nav>
@@ -44,7 +51,7 @@
                 <a href="#"> <img src="images/insta.svg" alt="instagram"></a>
             </li>
             <li>
-                <a href="#"><img src="images/search.svg" alt="search"></a>
+                <a href="#" id="opener" ><img src="images/search.svg" alt="search"></a>
             </li>
             <li>
                 <a href="#"><img src="images/store.svg" alt="store"></a>
@@ -165,7 +172,6 @@
                 <span class="four"></span>
                 <p>Key facts and <br> etiquette tips</p>
             </div>
-
             <div class="l_text ">
                 <span class="five"></span>
                 <p>A concise <br> 1-hour read</p>
@@ -174,7 +180,6 @@
                 <span class="six"></span>
                 <p>Instant<br>digital access</p>
             </div>
-
         </div>
         <h3>Each Thalby guide includes interviews with <br>a range of fascinating voices, such as</h3>
     </div>
@@ -273,6 +278,7 @@
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/scripts.js"></script>
 </body>
