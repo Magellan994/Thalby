@@ -607,16 +607,17 @@ header .logo{
 }
 .ui-widget-header {
     border: none;
-    background: none;
+    background-color: lightblue;
 }
-.ui-corner {
-    border-bottom-right-radius: 15px;
-}
+
 .b_d input{
     height: 30px;
     width: 100%;
-    border-color: mediumorchid;
+    border-color: #D399FF;
     border-radius: 10px;
+}
+#dialog{
+    background-color: lightblue;
 }
 .b_d{
 margin-top: 10px;
