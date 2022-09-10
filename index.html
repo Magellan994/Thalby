@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://resources/demos/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style_preproc.css">
 </head>
-<body>
+<body class="light">
 <div id="dialog">
    <div class="b_d">
     <label></label>
@@ -26,38 +24,44 @@
    </div>
 </div>
 <header>
-    <div class="container d-flex justify-content align-center">
-        <nav>
-            <ul class="d-flex align-center">
-                <li>
-                    <a href="#">Shop</a>
-                </li>
-                <li>
-                    <a href="#">Colecttion</a>
-                </li>
-                <li>
-                    <a href="#">Free Guide</a>
-                </li>
-                <li>
-                    <a href="#">Stories</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#" class="logo">
-            <img src="images/logo.svg" alt="logo">
-        </a>
+    <div class="header-wrapper container d-flex justify-content align-center">
+        <div class="nav">
+            <nav class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">Shop</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Colecttion</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Try a Free Guide</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Stories</a></li>
+                </ul>
+            </nav>
+        </div>
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="logo">
+               </a>
         <ul class=" d-flex align-center">
             <li>
-                <a href="#"> <img src="images/insta.svg" alt="instagram"></a>
+            <a href="#"> <img src="images/insta.svg" alt="instagram"></a>
             </li>
             <li>
-                <a href="#" id="opener" ><img src="images/search.svg" alt="search"></a>
+            <a href="#" id="opener" ><img src="images/search.svg" alt="search"></a>
             </li>
             <li>
-                <a href="#"><img src="images/store.svg" alt="store"></a>
+            <a href="#"><img src="images/store.svg" alt="store"></a>
             </li>
-        </ul>
+                    </ul>
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
     </div>
+</header>
+
+
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
 </header>
 <section class="main_banner">
     <div class="container">
@@ -241,7 +245,7 @@
     </div>
 </section>
 <footer class="end_site">
-    <div class="container d-flex justify-content ">
+    <div class="container d-flex justify-content row">
         <div class="f_social">
             <a href="#" ><img src="images/f_logo.svg" alt="logo"></a>
             <ul class="d-flex justify-content">
@@ -280,6 +284,7 @@
         crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
