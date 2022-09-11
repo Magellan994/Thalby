@@ -84,16 +84,24 @@ header .logo{
     margin-left: 0px;
     top: 0px;
   }
+  @include max-screen(428px){
+    position: relative;
+    left: 0;
+    margin-left: 0px;
+    top: 0px;
+  }
 }
 
 .container{
   margin: auto;
   max-width: 1064px;
   @include max-screen(1024 px){
-    padding: 0 10px;
+    padding: 0 10px;}
     @include max-screen(992 px){
       padding: 0 15px;
     }
+  @include max-screen(320px){
+    padding: 0 15px;
   }
 }
 
@@ -114,6 +122,14 @@ header .logo{
      font-size: 40px;
      line-height: 70px;
    }
+   @include max-screen(390px){
+     font-size: 30px;
+     line-height: 50px;
+   }
+   @include max-screen(320px){
+     font-size: 30px;
+     line-height: 50px;
+   }
  }
 
   p{
@@ -126,6 +142,14 @@ header .logo{
     margin-bottom: 26px;
     @include max-screen(1024 px){
       font-size: 17px;
+    }
+    @include max-screen(390px){
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include max-screen(320px){
+      font-size: 18px;
+      line-height: 24px;
     }
   }
   a{
@@ -140,18 +164,34 @@ header .logo{
     display: inline-block;
     padding: 7px 23px;
     text-decoration: none;
+    @include max-screen(390px){
+      font-size: 10px;
+      line-height: 13px;
+    }
+    @include max-screen(320px){
+      font-size: 10px;
+      line-height: 13px;
+    }
   }
   img{
     position: absolute;
     right: 60px;
     top: 0;
     @include max-screen(992px){
-      position: relative;
+      position: relative;}
       @include max-screen(768px){
         position: relative;
         right: 0;
         top: 0;
       }
+    @include max-screen(428px){
+      width: 100%;
+    }
+    @include max-screen(390px){
+      width: 100%;
+    }
+    @include max-screen(320px){
+      width: 100%;
     }
   }
 }
@@ -177,6 +217,14 @@ header .logo{
     text-align: center;
     color: #000000;
     display: block;
+    @include max-screen(390px){
+      font-size: 20px;
+      line-height: 32px;
+    }
+    @include max-screen(320px){
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
   p{
     font-family: 'Roboto',sans-serif;
@@ -187,6 +235,14 @@ header .logo{
     text-align: center;
     color: #000000;
     display: block;
+    @include max-screen(390px){
+      font-size: 13px;
+      line-height: 15px;
+    }
+    @include max-screen(320px){
+      font-size: 13px;
+      line-height: 15px;
+    }
     &:first-of-type{
       padding-top: 27px;
       padding-bottom: 47px ;
@@ -221,8 +277,23 @@ header .logo{
         color: #000000;
         padding-top: 20px;
         padding-bottom: 17px;
+        @include max-screen(390px){
+          font-size: 10px;
+          line-height: 15px;
+        }
+        @include max-screen(320px){
+          font-size: 10px;
+          line-height: 15px;
+        }
       }
-
+     img{
+       @include max-screen(390px){
+         width: 100%;
+       }
+       @include max-screen(320px){
+         width: 100%;
+       }
+     }
       p {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -232,6 +303,14 @@ header .logo{
         text-align: center;
         color: #000000;
         padding-bottom: 17px;
+        @include max-screen(390px){
+          font-size: 10px;
+          line-height: 15px;
+        }
+        @include max-screen(320px){
+          font-size: 10px;
+          line-height: 15px;
+        }
       }
 
       a {
@@ -245,6 +324,14 @@ header .logo{
         color: #000000;
         display: block;
         align-items: center;
+        @include max-screen(390px){
+          font-size: 10px;
+          line-height: 15px;
+        }
+        @include max-screen(320px){
+          font-size: 10px;
+          line-height: 15px;
+        }
       }
 
     }
@@ -269,6 +356,14 @@ header .logo{
     img{
       width: 100%;
       display: block;
+      @include max-screen(390px){
+        padding-left: 20px;
+        width: 100%;
+      }
+      @include max-screen(320px){
+        padding-left: 20px;
+        width: 100%;
+      }
     }
 
   }
@@ -286,6 +381,14 @@ header .logo{
       @include max-screen(768px){
         text-align: center;
       }
+      @include max-screen(390px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include max-screen(320px){
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
 
     p{
@@ -300,6 +403,14 @@ header .logo{
       @include max-screen(768px){
         text-align: center;
       }
+      @include max-screen(390px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include max-screen(320px){
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
 
     a{
@@ -313,6 +424,14 @@ header .logo{
       @include max-screen(768px){
         position: relative;
         left: 36%;
+      }
+      @include max-screen(390px){
+        font-size: 10px;
+        line-height: 15px;
+      }
+      @include max-screen(320px){
+        font-size: 10px;
+        line-height: 15px;
       }
     }
 
@@ -337,6 +456,14 @@ header .logo{
 
       width: 100%;
       display: block;
+      @include max-screen(390px){
+        padding-right: 20px;
+        width: 100%;
+      }
+      @include max-screen(320px){
+        padding-right: 20px;
+        width: 100%;
+      }
     }
 
   }
@@ -355,6 +482,14 @@ header .logo{
      @include max-screen(768px){
        text-align: center;
      }
+     @include max-screen(390px){
+       font-size: 20px;
+       line-height: 32px;
+     }
+     @include max-screen(320px){
+       font-size: 20px;
+       line-height: 32px;
+     }
    }
 
   p{
@@ -369,7 +504,14 @@ header .logo{
     @include max-screen(768px){
       text-align: center;
     }
-
+    @include max-screen(390px){
+      font-size: 20px;
+      line-height: 32px;
+    }
+@include max-screen(320px){
+  font-size: 20px;
+  line-height: 32px;
+}
   }
 
   a{
@@ -386,6 +528,14 @@ header .logo{
     @include max-screen(768px){
       position: relative;
       right: 35%;
+    }
+    @include max-screen(390px){
+      font-size: 10px;
+      line-height: 15px;
+    }
+    @include max-screen(320px){
+      font-size: 10px;
+      line-height: 15px;
     }
   }
 
@@ -411,6 +561,14 @@ header .logo{
     img{
       width: 100%;
       display: block;
+      @include max-screen(390px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include max-screen(320px){
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
 
   }
@@ -427,6 +585,14 @@ header .logo{
       @include max-screen(768px){
         text-align: center;
       }
+      @include max-screen(390px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include max-screen(320px){
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
 
     p{
@@ -440,6 +606,14 @@ header .logo{
       padding-bottom: 39px;
       @include max-screen(768px){
         text-align: center;
+      }
+      @include max-screen(390px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include max-screen(320px){
+        font-size: 20px;
+        line-height: 32px;
       }
     }
 
@@ -455,7 +629,14 @@ header .logo{
         position: relative;
         left: 38%;
       }
-
+@include max-screen(390px){
+  font-size: 10px;
+  line-height: 15px;
+}
+      @include max-screen(320px){
+        font-size: 10px;
+        line-height: 15px;
+      }
     }
 
   }
@@ -474,6 +655,9 @@ header .logo{
     @include max-screen(768px){
       flex-direction: column;
     }
+    @include max-screen(428px){
+      flex-direction: column;
+    }
 
   .l_text {
     width: 311px;
@@ -482,6 +666,15 @@ header .logo{
       width: 260px;
       @include max-screen(800px){
         width: 240px;
+      }
+      @include max-screen(428px){
+        width: 120px;
+      }
+      @include max-screen(390px){
+        width: 100px;
+      }
+      @include max-screen(320px){
+        width: 80px;
       }
     }
 
@@ -504,7 +697,19 @@ header .logo{
         height: 60px;
         right: 25px;
       }
-
+      @include max-screen(428px){
+        width: 60px;
+        height: 60px;
+        right: 90px;
+      }
+      @include max-screen(390px){
+        width: 30px;
+        height: 30px;
+      }
+      @include max-screen(320px){
+        width: 30px;
+        height: 30px;
+      }
     }
 
     .two {
@@ -539,6 +744,14 @@ header .logo{
     line-height: 42px;
     text-align: center;
     color: #000000;
+    @include max-screen(390px){
+      font-size: 20px;
+      line-height: 22px;
+    }
+    @include max-screen(320px){
+      font-size: 10px;
+      line-height: 28px;
+    }
   }
 
   h3{
@@ -561,11 +774,22 @@ header .logo{
     color: #000000;
     @include max-screen(834px){
       font-size: 25px;
-      line-height: 34px;
+      line-height: 34px;}
       @include max-screen(800px){
         font-size: 25px;
         line-height: 34px;
       }
+    @include max-screen(428px){
+      font-size: 25px;
+      line-height: 34px;
+    }
+    @include max-screen(390px){
+      font-size: 15px;
+      line-height: 22px;
+    }
+    @include max-screen(320px){
+      font-size: 13px;
+      line-height: 22px;
     }
   }
 
@@ -576,10 +800,12 @@ header .logo{
   padding-bottom: 52px;
   @include max-screen(800px){
     flex-direction: column;
-    align-items: center;
+    align-items: center;}
     @include max-screen(768px){
       flex-direction: column;
     }
+  @include max-screen(428px){
+    flex-direction: column;
   }
 
   .more_about{
@@ -721,9 +947,23 @@ header .logo{
   padding-bottom: 40px;
 
   .f_social{
-
+@include max-screen(390px){
+  width: 100%;
+}
+    @include max-screen(390px){
+      margin-right: 45px;
+    }
+    @include max-screen(320px){
+      margin-right: 45px;
+    }
     img{
       padding-bottom: 44px;
+      @include max-screen(390px){
+        max-width: 100%;
+      }
+      @include max-screen(320px){
+        max-width: 100%;
+      }
     }
 
   }
@@ -739,6 +979,15 @@ header .logo{
   }
   .more_nav{
     margin-right: 128px;
+    @include max-screen(428px){
+      margin-left: 30px;
+    }
+    @include max-screen(390px){
+      margin-right: 28px;
+    }
+    @include max-screen(320px){
+      margin-right: 28px;
+    }
 
     .nav_end{
 
@@ -752,6 +1001,26 @@ header .logo{
         text-decoration: none;
         display: block;
         padding-top: 12px;
+        @include max-screen(428px){
+          font-size: 10px;
+          line-height: 15px;
+        }
+        @include max-screen(414px){
+          font-size: 9px;
+          line-height: 13px;
+        }
+        @include max-screen(393px){
+          font-size: 7px;
+          line-height: 15px;
+        }
+        @include max-screen(390px){
+          font-size: 10px;
+          line-height: 21px;
+        }
+        @include max-screen(320px){
+          font-size: 10px;
+          line-height: 21px;
+        }
       }
 
       ul{
@@ -775,6 +1044,9 @@ header .logo{
     position: relative;
     right: 50px;
     top: 15px;
+    @include max-screen(428px){
+      left: 15px;
+    }
   }
 
 }
@@ -876,6 +1148,9 @@ body{
   padding-top: 15px;
   transition : all 0.3s ease-out;
   display: none;
+  @include max-screen(768px){
+    display:  inline-block;
+  }
 }
 .menu-icon {
   height: 30px;
@@ -923,7 +1198,9 @@ body{
 @include max-screen(768px){
   display: none;
   flex-direction: row-reverse;
+  position: fixed;
 }
+
 }
 .nav:before, .nav:after {
   content: "";
@@ -956,10 +1233,23 @@ body{
   margin: 0;
   z-index: 2;
   display: flex;
+  @include max-screen(768px){
+    display: block;
+  }
 }
 
 body.nav-active .nav__content {
   visibility: visible;
+  @include max-screen(768px){
+    position: fixed;
+    visibility: hidden;
+    top: 50%;
+    margin-top: 20px;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    width: 100%;
+    text-align: center;
+  }
 }
 body.nav-active .menu-icon__line {
   background-color: #fff;
@@ -1005,6 +1295,87 @@ body.nav-active .nav__list-item {
   transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
   transition: opacity .3s ease, transform .3s ease, color .3s ease;
   transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .3s ease;
+  @include max-screen(768px){
+    position: relative;
+    display: block;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+    opacity: 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vh;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: 3px;
+    -webkit-transform: translate(100px, 0%);
+    transform: translate(100px, 0%);
+    -webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
+    transition: opacity .2s ease, -webkit-transform .3s ease;
+    transition: opacity .2s ease, transform .3s ease;
+    transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+  .nav__list-item a{
+    @include max-screen(768px){
+      position: relative;
+      text-decoration: none;
+      color: rgba(255,255,255,0.6);
+      overflow: hidden;
+      cursor: pointer;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: 900;
+      z-index: 2;
+      display: inline-block;
+      text-transform: uppercase;
+      -webkit-transition: all 200ms linear;
+      transition: all 200ms linear;
+    }
+  }
+    .nav__list-item a:after {
+      @include max-screen(768px) {
+        position: absolute;
+        content: '';
+        top: 50%;
+        margin-top: -2px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        background-color: #8167a9;
+        z-index: 1;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+    }
+      .nav__list-item a:hover:after{
+        @include max-screen(768px){
+          height: 4px;
+          opacity: 1;
+          left: 0;
+          width: 100%;
+        }}
+        .nav__list-item a:hover {
+          @include max-screen(768px) {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+.nav__list-item.active-nav a{
+  @include max-screen(768px){
+    color: rgba(255,255,255,1);
+  }
+}
+.nav__list-item.active-nav a:after{
+  @include max-screen(768px){
+    height: 4px;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+  }
 }
 body.nav-active .nav__list-item:nth-child(0) {
   -webkit-transition-delay: 0.7s;
