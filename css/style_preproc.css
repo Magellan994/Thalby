@@ -219,13 +219,6 @@ header {
       padding-top: 88px;
       padding-bottom: 52px; }
   @media screen and (max-width: 834px) {
-    .o_b_s .sellers {
-      flex-direction: column;
-      align-items: center; } }
-  @media screen and (max-width: 768px) {
-    .o_b_s .sellers {
-      flex-direction: column; } }
-  @media screen and (max-width: 834px) {
     .o_b_s .sellers .sellers_info {
       max-width: 320px; } }
   @media screen and (max-width: 768px) {
@@ -302,22 +295,27 @@ header {
   .People .for_image {
     max-width: 385px;
     margin-right: 50px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
       .People .for_image {
-        padding-bottom: 10px; } }
-    .People .for_image img {
-      width: 100%;
-      display: block; }
-      @media screen and (max-width: 390px) {
+        padding-bottom: 10px;
+        margin: auto; }
         .People .for_image img {
-          padding-left: 20px;
-          width: 100%; } }
-      @media screen and (max-width: 320px) {
-        .People .for_image img {
-          padding-left: 20px;
-          width: 100%; } }
+          max-width: 100%;
+          display: block; } }
+    @media screen and (max-width: 960px) and (max-width: 390px) {
+      .People .for_image img {
+        padding-left: 20px;
+        width: 100%; } }
+    @media screen and (max-width: 960px) and (max-width: 320px) {
+      .People .for_image img {
+        padding-left: 20px;
+        width: 100%; } }
+
   .People .discription {
     max-width: 498px; }
+    @media screen and (max-width: 960px) {
+      .People .discription {
+        margin: auto; } }
     .People .discription h2 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -325,7 +323,7 @@ header {
       font-size: 36px;
       line-height: 42px;
       color: #000000; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .People .discription h2 {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -345,7 +343,7 @@ header {
       color: #000000;
       padding-top: 31px;
       padding-bottom: 40px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .People .discription p {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -364,7 +362,7 @@ header {
       line-height: 20px;
       text-decoration-line: underline;
       color: #000000; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .People .discription a {
           position: relative;
           left: 36%; } }
@@ -387,9 +385,10 @@ header {
   .second_part .for_image {
     max-width: 385px;
     margin-left: 50px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
       .second_part .for_image {
-        padding-bottom: 10px; } }
+        padding-bottom: 10px;
+        margin: auto; } }
     .second_part .for_image img {
       width: 100%;
       display: block; }
@@ -403,6 +402,9 @@ header {
           width: 100%; } }
   .second_part .second_text {
     max-width: 513px; }
+    @media screen and (max-width: 960px) {
+      .second_part .second_text {
+        margin: auto; } }
     .second_part .second_text h2 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -411,7 +413,7 @@ header {
       line-height: 42px;
       text-align: right;
       color: #000000; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .second_part .second_text h2 {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -431,7 +433,7 @@ header {
       text-align: right;
       color: #000000;
       padding: 31px 0; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .second_part .second_text p {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -453,7 +455,7 @@ header {
       color: #000000;
       display: block;
       justify-content: flex-end; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .second_part .second_text a {
           position: relative;
           right: 35%; } }
@@ -476,9 +478,10 @@ header {
   .third_part .for_image {
     max-width: 385px;
     margin-right: 50px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
       .third_part .for_image {
-        padding-bottom: 10px; } }
+        padding-bottom: 10px;
+        margin: auto; } }
     .third_part .for_image img {
       width: 100%;
       display: block; }
@@ -492,6 +495,9 @@ header {
           line-height: 32px; } }
   .third_part .third_text {
     max-width: 530px; }
+    @media screen and (max-width: 960px) {
+      .third_part .third_text {
+        margin: auto; } }
     .third_part .third_text h2 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -499,7 +505,7 @@ header {
       font-size: 36px;
       line-height: 42px;
       color: #000000; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .third_part .third_text h2 {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -519,7 +525,7 @@ header {
       color: #000000;
       padding-top: 31px;
       padding-bottom: 39px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .third_part .third_text p {
           text-align: center; } }
       @media screen and (max-width: 390px) {
@@ -538,7 +544,7 @@ header {
       line-height: 20px;
       text-decoration-line: underline;
       color: #000000; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 912px) {
         .third_part .third_text a {
           position: relative;
           left: 38%; } }
@@ -560,31 +566,24 @@ header {
     justify-content: space-between;
     max-width: 1088px;
     margin: auto; }
-    @media screen and (max-width: 768px) {
-      .guides .text {
-        flex-direction: column; } }
-    @media screen and (max-width: 428px) {
-      .guides .text {
-        flex-direction: column; } }
     .guides .text .l_text {
       width: 311px;
       padding-bottom: 111px; }
       @media screen and (max-width: 834px) {
         .guides .text .l_text {
           width: 260px; } }
-  @media screen and (max-width: 834px) and (max-width: 800px) {
-    .guides .text .l_text {
-      width: 240px; } }
-  @media screen and (max-width: 834px) and (max-width: 428px) {
-    .guides .text .l_text {
-      width: 120px; } }
-  @media screen and (max-width: 834px) and (max-width: 390px) {
-    .guides .text .l_text {
-      width: 100px; } }
-  @media screen and (max-width: 834px) and (max-width: 320px) {
-    .guides .text .l_text {
-      width: 80px; } }
-
+      @media screen and (max-width: 800px) {
+        .guides .text .l_text {
+          width: 240px; } }
+      @media screen and (max-width: 768px) {
+        .guides .text .l_text {
+          width: 220px; } }
+      @media screen and (max-width: 390px) {
+        .guides .text .l_text {
+          width: 100px; } }
+      @media screen and (max-width: 320px) {
+        .guides .text .l_text {
+          width: 80px; } }
       .guides .text .l_text span {
         background: #21F7EC;
         width: 70px;
@@ -604,6 +603,9 @@ header {
             width: 60px;
             height: 60px;
             right: 33px; } }
+        @media screen and (max-width: 766px) {
+          .guides .text .l_text span {
+            right: 53px; } }
         @media screen and (max-width: 428px) {
           .guides .text .l_text span {
             width: 60px;

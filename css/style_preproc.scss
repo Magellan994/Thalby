@@ -260,13 +260,6 @@ header{
     }
   }
   .sellers {
-    @include max-screen(834px){
-      flex-direction: column;
-      align-items: center;
-    }
-    @include max-screen(768px){
-      flex-direction: column;
-    }
 
     .sellers_info {
       @include max-screen(834px){
@@ -355,28 +348,35 @@ header{
   .for_image{
     max-width: 385px;
     margin-right: 50px;
-    @include max-screen(768px){
+    @include max-screen(960px) {
       padding-bottom: 10px;
-    }
+      margin: auto;
 
 
-    img{
-      width: 100%;
-      display: block;
-      @include max-screen(390px){
-        padding-left: 20px;
-        width: 100%;
+
+      img {
+        max-width: 100%;
+        display: block;
+        @include max-screen(760px){
+
+        }
+        @include max-screen(390px) {
+          padding-left: 20px;
+          width: 100%;
+        }
+        @include max-screen(320px) {
+          padding-left: 20px;
+          width: 100%;
+        }
       }
-      @include max-screen(320px){
-        padding-left: 20px;
-        width: 100%;
-      }
     }
-
   }
   .discription{
 
     max-width: 498px;
+    @include max-screen(960px){
+      margin: auto;
+    }
 
     h2{
       font-family: $main_font;
@@ -385,7 +385,7 @@ header{
       font-size: 36px;
       line-height: 42px;
       color: $main_color;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -407,7 +407,7 @@ header{
       color: $main_color;
       padding-top: 31px;
       padding-bottom: 40px;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -428,7 +428,7 @@ header{
       line-height: 20px;
       text-decoration-line: underline;
       color: $main_color;
-      @include max-screen(768px){
+      @include max-screen(912px){
         position: relative;
         left: 36%;
       }
@@ -456,13 +456,16 @@ header{
   .for_image{
     max-width: 385px;
     margin-left: 50px;
-    @include max-screen(768px){
+    @include max-screen(960px) {
       padding-bottom: 10px;
+      margin: auto;
+
     }
     img{
-
       width: 100%;
       display: block;
+      @include max-screen(940px){
+      }
       @include max-screen(390px){
         padding-right: 20px;
         width: 100%;
@@ -477,6 +480,9 @@ header{
   .second_text{
 
     max-width: 513px;
+    @include max-screen(960px){
+      margin: auto;
+    }
     h2{
 
       font-family: $main_font;
@@ -486,7 +492,7 @@ header{
       line-height: 42px;
       text-align: right;
       color: $main_color;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -508,7 +514,7 @@ header{
       text-align: right;
       color: $main_color;
       padding: 31px 0;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -532,7 +538,7 @@ header{
       color: $main_color;
       display: block;
       justify-content: flex-end;
-      @include max-screen(768px){
+      @include max-screen(912px){
         position: relative;
         right: 35%;
       }
@@ -561,8 +567,10 @@ header{
   .for_image{
     max-width: 385px;
     margin-right: 50px;
-    @include max-screen(768px){
+    @include max-screen(960px) {
       padding-bottom: 10px;
+      margin: auto;
+
     }
 
     img{
@@ -581,6 +589,9 @@ header{
   }
   .third_text{
     max-width: 530px;
+    @include max-screen(960px){
+      margin: auto;
+    }
 
     h2{
       font-family: $main_font;
@@ -589,7 +600,7 @@ header{
       font-size: 36px;
       line-height: 42px;
       color: $main_color;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -611,7 +622,7 @@ header{
       color: $main_color;
       padding-top: 31px;
       padding-bottom: 39px;
-      @include max-screen(768px){
+      @include max-screen(912px){
         text-align: center;
       }
       @include max-screen(390px){
@@ -632,7 +643,7 @@ header{
       line-height: 20px;
       text-decoration-line: underline;
       color: $main_color;
-      @include max-screen(768px){
+      @include max-screen(912px){
         position: relative;
         left: 38%;
       }
@@ -659,87 +670,86 @@ header{
     justify-content: space-between;
     max-width: 1088px;
     margin: auto;
-    @include max-screen(768px){
-      flex-direction: column;
-    }
-    @include max-screen(428px){
-      flex-direction: column;
-    }
+
 
     .l_text {
       width: 311px;
       padding-bottom: 111px;
-      @include max-screen(834px){
-        width: 260px;
-        @include max-screen(800px){
+      @include max-screen(834px) {
+        width: 260px;}
+        @include max-screen(800px) {
           width: 240px;
         }
-        @include max-screen(428px){
-          width: 120px;
+        @include max-screen(768px) {
+          width: 220px;
         }
-        @include max-screen(390px){
+
+        @include max-screen(390px) {
           width: 100px;
         }
-        @include max-screen(320px){
+        @include max-screen(320px) {
           width: 80px;
         }
-      }
 
-      span {
-        background: #21F7EC;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: block;
-        margin-left: 120px;
-        @include max-screen(834px){
-          width: 60px;
-          height: 60px;
-          position: relative;
-          right: 38px;
-          bottom: 10px;
+
+        span {
+          background: #21F7EC;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: block;
+          margin-left: 120px;
+          @include max-screen(834px) {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            right: 38px;
+            bottom: 10px;
+          }
+          @include max-screen(800px) {
+            width: 60px;
+            height: 60px;
+            right: 33px;
+          }
+          @include max-screen(766px){
+            right: 53px;
+          }
+
+          @include max-screen(428px) {
+            width: 60px;
+            height: 60px;
+            right: 90px;
+          }
+          @include max-screen(390px) {
+            width: 30px;
+            height: 30px;
+          }
+          @include max-screen(320px) {
+            width: 30px;
+            height: 30px;
+          }
         }
-        @include max-screen(800px){
-          width: 60px;
-          height: 60px;
-          right: 33px;
+
+        .two {
+          background: #33D3BC;
         }
-        @include max-screen(428px){
-          width: 60px;
-          height: 60px;
-          right: 90px;
+
+        .tree {
+          background: #18A5C6;
         }
-        @include max-screen(390px){
-          width: 30px;
-          height: 30px;
+
+        .four {
+          background: #D38F62;
         }
-        @include max-screen(320px){
-          width: 30px;
-          height: 30px;
+
+        .five {
+          background: #F94C43;
+        }
+
+        .six {
+          background: #D399FF;
         }
       }
-
-      .two {
-        background: #33D3BC;
-      }
-
-      .tree{
-        background: #18A5C6;
-      }
-
-      .four{
-        background: #D38F62;
-      }
-
-      .five{
-        background: #F94C43;
-      }
-
-      .six{
-        background: #D399FF;
-      }
-
-    }
 
   }
 
