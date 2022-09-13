@@ -1,6 +1,9 @@
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
 @import "bootstrap.css";
+$main_font:'Roboto',sans-serif;
+$main_color:#000000;
+$white_color:#FFFFFF;
 @mixin max-screen($res)
 {
   @media screen and (max-width: $res)
@@ -39,56 +42,63 @@
 header{
   background-color: white;
   padding: 7px 0;
-}
-header ul{
+ li{
+   &:first-of-type {
+     margin-right: 16px;
+   }
+   &:last-of-type {
+     margin-left: 7px;
+   }
+ }
+
+ ul{
   list-style: none;
 }
-header nav li a {
-  font-family: 'Roboto',sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  color: #1C1B1B;
-  text-decoration: none;
-}
-header nav li{
-  margin-right: 28px;
-}
-header li:first-of-type{
-  margin-right: 16px;
-}
-header nav li:first-of-type{
-  margin-right: 28px;
-}
-header li:last-of-type{
-  margin-left: 7px;
-}
-header nav li:last-of-type{
-  margin-left: 0;
-}
-header .container{
-  position: relative;
-}
-header .logo{
-  position: absolute;
-  left: 50%;
-  margin-left: -40px;
-  top: 13px;
-  @include max-screen(768px){
-    position: relative;
-    left: 0;
-    margin-left: 0;
-    top: 0;
-  }
-  @include max-screen(428px){
-    position: relative;
-    left: 0;
-    margin-left: 0;
-    top: 0;
-  }
-}
+ nav {
+   li {
+     margin-right: 28px;
 
+     &:first-of-type {
+       margin-right: 28px;
+     }
+
+     &:last-of-type {
+       margin-left: 0;
+     }
+
+     a {
+       font-family: $main_font;
+       font-style: normal;
+       font-weight: 700;
+       font-size: 16px;
+       line-height: 26px;
+       color: #1C1B1B;
+       text-decoration: none;
+     }
+   }
+ }
+.container {
+     position: relative;
+   }
+.logo {
+     position: absolute;
+     left: 50%;
+     margin-left: -40px;
+     top: 13px;
+     @include max-screen(768px) {
+       position: relative;
+       left: 0;
+       margin-left: 0;
+       top: 0;
+     }
+     @include max-screen(428px) {
+       position: relative;
+       left: 0;
+       margin-left: 0;
+       top: 0;
+     }
+   }
+ }
 .container{
   margin: auto;
   max-width: 1064px;
@@ -108,12 +118,12 @@ header .logo{
   position: relative;
 
   h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family:$main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
-    color: #000000;
+    color: $main_color;
     margin-bottom: 42px;
     @include max-screen(1024px) {
       font-size: 40px;
@@ -130,12 +140,12 @@ header .logo{
   }
 
   p{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color:$main_color;
     margin-bottom: 26px;
     @include max-screen(1024 px){
       font-size: 17px;
@@ -150,14 +160,14 @@ header .logo{
     }
   }
   a{
-    background: #000000;
+    background: $main_color;
     border-radius: 100px;
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-    color: #FFFFFF;
+    color:$white_color;
     display: inline-block;
     padding: 7px 23px;
     text-decoration: none;
@@ -206,13 +216,13 @@ header .logo{
   }
 
   h3{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     display: block;
     @include max-screen(390px){
       font-size: 20px;
@@ -224,13 +234,13 @@ header .logo{
     }
   }
   p{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     display: block;
     @include max-screen(390px){
       font-size: 13px;
@@ -265,13 +275,13 @@ header .logo{
          padding-bottom: 20px;
        }
       h4 {
-        font-family: 'Roboto', sans-serif;
+        font-family: $main_font;
         font-style: normal;
         font-weight: 700;
         font-size: 17px;
         line-height: 20px;
         text-align: center;
-        color: #000000;
+        color: $main_color;
         padding-top: 20px;
         padding-bottom: 17px;
         @include max-screen(390px){
@@ -292,13 +302,13 @@ header .logo{
         }
       }
       p {
-        font-family: 'Roboto', sans-serif;
+        font-family: $main_font;
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 20px;
         text-align: center;
-        color: #000000;
+        color: $main_color;
         padding-bottom: 17px;
         @include max-screen(390px){
           font-size: 10px;
@@ -311,14 +321,14 @@ header .logo{
       }
 
       a {
-        font-family: 'Roboto', sans-serif;
+        font-family: $main_font;
         font-style: normal;
         font-weight: 700;
         font-size: 17px;
         line-height: 20px;
         text-align: center;
         text-decoration-line: underline;
-        color: #000000;
+        color: $main_color;
         display: block;
         align-items: center;
         @include max-screen(390px){
@@ -369,12 +379,12 @@ header .logo{
     max-width: 498px;
 
     h2{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 42px;
-      color: #000000;
+      color: $main_color;
       @include max-screen(768px){
         text-align: center;
       }
@@ -389,12 +399,12 @@ header .logo{
     }
 
     p{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
       line-height: 42px;
-      color: #000000;
+      color: $main_color;
       padding-top: 31px;
       padding-bottom: 40px;
       @include max-screen(768px){
@@ -411,13 +421,13 @@ header .logo{
     }
 
     a{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
       line-height: 20px;
       text-decoration-line: underline;
-      color: #000000;
+      color: $main_color;
       @include max-screen(768px){
         position: relative;
         left: 36%;
@@ -469,13 +479,13 @@ header .logo{
     max-width: 513px;
     h2{
 
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 42px;
       text-align: right;
-      color: #000000;
+      color: $main_color;
       @include max-screen(768px){
         text-align: center;
       }
@@ -490,13 +500,13 @@ header .logo{
     }
 
     p{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
       line-height: 42px;
       text-align: right;
-      color: #000000;
+      color: $main_color;
       padding: 31px 0;
       @include max-screen(768px){
         text-align: center;
@@ -512,14 +522,14 @@ header .logo{
     }
 
     a{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
       line-height: 20px;
       text-align: right;
       text-decoration-line: underline;
-      color: #000000;
+      color: $main_color;
       display: block;
       justify-content: flex-end;
       @include max-screen(768px){
@@ -573,12 +583,12 @@ header .logo{
     max-width: 530px;
 
     h2{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 42px;
-      color: #000000;
+      color: $main_color;
       @include max-screen(768px){
         text-align: center;
       }
@@ -593,12 +603,12 @@ header .logo{
     }
 
     p{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
       line-height: 42px;
-      color: #000000;
+      color: $main_color;
       padding-top: 31px;
       padding-bottom: 39px;
       @include max-screen(768px){
@@ -615,13 +625,13 @@ header .logo{
     }
 
     a{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
       line-height: 20px;
       text-decoration-line: underline;
-      color: #000000;
+      color: $main_color;
       @include max-screen(768px){
         position: relative;
         left: 38%;
@@ -686,13 +696,13 @@ header .logo{
           width: 60px;
           height: 60px;
           position: relative;
-          right: 20px;
+          right: 38px;
           bottom: 10px;
         }
         @include max-screen(800px){
           width: 60px;
           height: 60px;
-          right: 25px;
+          right: 33px;
         }
         @include max-screen(428px){
           width: 60px;
@@ -734,13 +744,13 @@ header .logo{
   }
 
   h4{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     @include max-screen(390px){
       font-size: 20px;
       line-height: 22px;
@@ -752,23 +762,23 @@ header .logo{
   }
 
   h3{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
   }
 
   p{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     @include max-screen(834px){
       font-size: 25px;
       line-height: 34px;}
@@ -824,24 +834,24 @@ header .logo{
     }
 
     h4{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 22px;
       line-height: 26px;
       text-align: center;
       letter-spacing: 0.6px;
-      color: #000000;
+      color: $main_color;
       margin-bottom: 40px;
     }
 
     p {
-      font-family: 'Roboto', sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 400;
       font-size: 19px;
       line-height: 22px;
-      color: #000000;
+      color: $main_color;
       margin-bottom: 44px;
 
       span{
@@ -853,13 +863,13 @@ header .logo{
     }
 
     a{
-      font-family: 'Roboto',sans-serif;
+      font-family: $main_font;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
       line-height: 21px;
       text-decoration-line: underline;
-      color: #000000;
+      color: $main_color;
     }
 
   }
@@ -872,23 +882,23 @@ header .logo{
   padding-bottom: 98px;
 
   h4{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
   }
 
   p{
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     margin-top: 9px;
     margin-bottom: 26px;
   }
@@ -902,7 +912,7 @@ header .logo{
   .m_input{
     width:153px;
     height: 29px;
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -921,16 +931,16 @@ header .logo{
     }
   }
   .S_button{
-    background: #000000;
-    border: 1px solid #000000;
+    background: $main_color;
+    border: 1px solid $main_color;
     border-radius: 100px;
-    font-family: 'Roboto',sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    color: #FFFFFF;
+    color: $white_color;
     padding: 10px 28px;
   }
   .i_button{
@@ -958,13 +968,13 @@ header .logo{
   }
 
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
     text-align: center;
-    color: #FFFFFF;
+    color: $white_color;
   }
 }
     .more_nav {
@@ -973,12 +983,12 @@ header .logo{
 
     .nav_end {
       a {
-        font-family: 'Roboto', sans-serif;
+        font-family: $main_font;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-        color: #FFFFFF;
+        color: $white_color;
         text-decoration: none;
         display: block;
         padding-top: 12px;
@@ -1135,6 +1145,9 @@ header .logo{
       padding-top: 15px;
       transition: all 0.3s ease-out;
       display: none;
+      @include max-screen(768px){
+        display: inline-block;
+      }
     }
 
     .menu-icon {
@@ -1185,7 +1198,21 @@ header .logo{
       z-index: 98;
       left: 0;
       top: 0;
+      @include max-screen(768px){
+        position: fixed;
+      }
     }
+.nav__content {
+  @include max-screen(768px){
+  position: fixed;
+  visibility: hidden;
+  top: 50%;
+  margin-top: 20px;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  width: 100%;
+  text-align: center;}
+}
 
     .nav:before, .nav:after {
       content: "";
@@ -1220,8 +1247,84 @@ header .logo{
       margin: 0;
       z-index: 2;
       display: flex;
+      @include max-screen(768px){
+        display: block;
+      }
     }
-
+.nav__list-item {
+  @include max-screen(768px){
+  position: relative;
+  display: block;
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8vh;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 3px;
+  -webkit-transform: translate(100px, 0%);
+  transform: translate(100px, 0%);
+  -webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
+  transition: opacity .2s ease, -webkit-transform .3s ease;
+  transition: opacity .2s ease, transform .3s ease;
+  transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
+  margin-top: 0;
+  margin-bottom: 0;
+}}
+.nav__list-item a{
+ @include max-screen(768px){
+  position: relative;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 900;
+  z-index: 2;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;}
+}
+.nav__list-item a:after{
+  @include max-screen(768px){
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: #8167a9;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;}
+}
+.nav__list-item a:hover:after{
+  @include max-screen(768px){
+  height: 4px;
+  opacity: 1;
+  left: 0;
+  width: 100%;}
+}
+.nav__list-item a:hover{@include max-screen(768px){
+  color: rgba(255,255,255,1);
+}}
+.nav__list-item.active-nav a{ @include max-screen(768px){
+  color: rgba(255,255,255,1);
+}}
+.nav__list-item.active-nav a:after{@include max-screen(768px){
+  height: 4px;
+  opacity: 1;
+  left: 0;
+  width: 100%;
+}}
     body.nav-active .nav__content {
       visibility: visible;
     }
